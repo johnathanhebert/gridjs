@@ -43,8 +43,3 @@ function clear() {
     context.clearRect(0, 0, context.canvas.width, context.canvas.height);
     context.restore();
 }
-
-
-
-
-
