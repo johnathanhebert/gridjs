@@ -2,10 +2,7 @@ function smiley() {
     var cx = 100;
     var cy = 100;
     
-    context.save();
-    
-    context.setTransform.apply(context, smiley.transformation);
-    
+    context.save();    
     context.lineCap = 'round';
     
     // face
