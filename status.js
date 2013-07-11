@@ -9,11 +9,11 @@ function status() {
     context.save();
     context.setTransform(1, 0, 0, 1, 0, 0);
     context.fillStyle = '#000000';
-    context.font = 'Arial 20px';
+    context.font = '24px Arial';
     context.beginPath();
-    context.fillRect(context.canvas.width - 90, context.canvas.height - 40, 80, 30);
+    context.fillRect(context.canvas.width - 180, context.canvas.height - 70, 170, 60);
     context.fill();
     context.fillStyle = '#ffffff';
-    context.fillText(text, context.canvas.width - 82, context.canvas.height - 21);
+    context.fillText(text, context.canvas.width - 165, context.canvas.height - 35);
     context.restore();
 }
