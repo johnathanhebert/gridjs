@@ -1,7 +1,7 @@
 function status() {
     var d = new Date();
-    var h = d.getHours();
-    var m = d.getMinutes();
+    var h = ('0' + (d.getHours() % 12)).substr(-2);
+    var m = ('0' + d.getMinutes()).substr(-2);
     var s = ('0' + d.getSeconds()).substr(-2);
     var ms = ('00' + d.getMilliseconds()).substr(-3);
     var text = h + ':' + m + ':' + s + '.' + ms;

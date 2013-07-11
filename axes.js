@@ -1,7 +1,7 @@
 function originalAxes() {
     context.save();
     context.setTransform(1, 0, 0, 1, 0, 0);
-    gridlines('#eeeeee', '#eeeeee');
+    gridlines('#dddddd', '#000000');
     context.restore();
 }
 

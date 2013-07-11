@@ -21,20 +21,23 @@ function setup() {
     window.pi = Math.PI;
     window.slice = Array.prototype.slice.call.bind(Array.prototype.slice);
     window.context = context;
+    window.transformation = [1, 0, 0, 1, 0, 0];
     window.onresize = setup;
 }
 
 function loop() {
     clear();
+    smiley();
     originalAxes();
     transformedAxes();
-    smiley();
     status();
     requestAnimationFrame(loop);
 }
 
 function reset() {
+    console.clear();
     context.setTransform(1, 0, 0, 1, 0, 0);
+    return window.transformation = [1, 0, 0, 1, 0, 0];
 }
 
 function clear() {
